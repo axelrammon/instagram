@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ecf0f1;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 #container {
   display: flex;
   width: 100vw;
@@ -11,7 +20,6 @@
 }
 
 .box-1 {
-  background-color: aqua;
   width: 50vw;
 }
 
@@ -21,10 +29,90 @@
 }
 
 .box-2 {
-  background-color: blue;
   width: 50vw;
+  display: flex;
+  align-items: center;
 }
 
-.profile {
+.content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.content > div {
+  margin: 5px;
+  width: 420px;
+}
+
+.content .content-1 {
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0px 1px 5px #c0c0c0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .content-1 > div {
+  margin: 2px;
+}
+
+.content .content-1 .logotipo-img {
+  width: 150px;
+}
+
+.profile_photo {
   width: 100px;
+  border-radius: 50%;
+}
+
+.content .content-1 .botoes-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content .content-1 .botoes-login .botao-continuar {
+  background-color: #0095f6;
+  color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-padrao {
+  color: #0095f6;
+}
+
+.content .content-1 .botoes-login a {
+  margin: 5px 0;
+}
+
+.content .content-2 {
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  box-shadow: 0px 1px 5px #c0c0c0;
+  padding: 10px;
+  text-align: center;
+}
+
+.content .content-2 > div {
+  margin: 5px 0;
+}
+
+.content .botoes-apps {
+  text-align: center;
+  padding: 5px;
+}
+
+.content .botoes-apps .img-botoes {
+  display: flex;  
+  justify-content: center;
+}
+
+.content .botoes-apps .img-botoes img {
+  width: 150px;
+  margin: 10px 20px;
 }
